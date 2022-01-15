@@ -14,6 +14,10 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+html
+{
+    scroll-behavior: smooth;
+}
 /* Common Classes  */
 .container{
     max-width: 1200px;
@@ -147,7 +151,7 @@ nav{
 
     background-image: url(./images/Circle\ design.svg);
     background-repeat: no-repeat;
-    
+    overflow: hidden;
     
 }
 .banner-right img{
@@ -162,8 +166,9 @@ nav{
 
 .banner-right img:hover
 {
-    transform: scale(1.2) rotate(360deg);
-    transition: transform 2s ease-in-out;
+    transform: scale(1.2);
+    transition: transform 2s ease-in-out ;
+    
 }
 
 /* Brands */
@@ -308,16 +313,14 @@ hr
 }
 .see-more
 {
- 
     width: 1000px;
-  
 }
 .see-more a
 {
     text-decoration: none;
     color: #E02C6DDE;
     float: right;
-    margin: 50px 0px 100px 0px;
+    margin: 20px 0px 100px 0px;
     font-weight: bold;
     font-size: 16px;
     gap: 10px;
@@ -335,6 +338,97 @@ hr
    transform: scale(1.1);
 }
 
+
+
+/****************************
+     Feature Products
+******************************/
+
+.featured-products
+{
+    
+    height: 500px;
+    
+    background-image: url(./images/photo-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 1349px 500px; 
+    background-position:right;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    animation: image-slide 20s ease-in-out 2s infinite  reverse;
+}
+
+@keyframes image-slide {
+    0%   {background-image: url(./images/photo-2.jpg);}
+    25%  {background-image: url(./images/photo-3.jpg);}
+    50%  {background-image: url(./images/photo-4.jpg);}
+    100% {background-image: url(./images/gear.png);}
+  }
+
+
+.product{
+      color: rgb(255, 255, 255);
+     text-align: center;
+     padding: 110px;
+    
+  }
+.featured-products:hover {
+   opacity: 0.95;
+   transition: .35s ease-in-out;
+}
+.featured-products:hover .product{
+    background-color: rgba(98, 99, 94, 0.185);
+    transition: 0.5s;
+ }
+  .product h1
+  {
+      font-size: 48px;
+      font-family: 'Roboto', sans-serif;
+      
+  }
+  .product p{
+      padding-top: 10px;
+      font-size: 16px;
+      font-weight: 400px;
+  }
+
+/* Button Animation */
+.featured-products button
+{
+    width: 150px;
+   /* left: 600px;
+   top: 350px; */
+   margin: 80px 0 0 600px;
+   transition: all .6s ;
+
+}
+.buy-now {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .buy-now:after {
+    content: '>>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .featured-products button:hover .buy-now {
+    padding-right: 30px;
+  }
+  
+  .featured-products button:hover .buy-now:after {
+    opacity: 1;
+    right: 0;
+   
+  }
+
+
 /* Footer CSS */
 footer{
     background-color:  #0A0826;
@@ -342,7 +436,7 @@ footer{
 }
 .section-footer
 {
-    width: 100%;
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -354,6 +448,7 @@ footer{
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 3px;
+    margin-top: 50px;
 }
 .section-footer p
 {
