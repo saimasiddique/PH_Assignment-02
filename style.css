@@ -1,5 +1,7 @@
 /* Google Font Link  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 /* Intial margin and padding */
 *{
@@ -191,4 +193,143 @@ hr
 {
     
     transform: scale(1.2);
+}
+
+/* Card Styling */
+
+.collection{
+    margin: 100px 196px;
+}
+
+.section-title{
+    color: #3A3A3A;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 70px;
+    margin-bottom: 30px;
+    text-align: center;    
+}
+
+
+.cards
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 476px;
+    width: 329px;
+    border-radius: 5px;
+    /* border: 2px solid gray; */
+    box-sizing: border-box;
+    /* box-shadow: 0 0 10px 10px #AAAAAA; */
+    box-shadow: 0 0px 35px rgba(0, 0, 0, 0.171);
+}
+.card-banner img{
+ width: 100%;
+ object-fit: cover;
+}
+
+.card-details
+{
+    padding-left: 25px;
+    width: 100%;
+}
+.card-title
+{
+    
+    width: 100%;  
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;    
+    color: #18191F;
+
+}
+
+.card-price
+{
+    
+    height: 36px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    /* line-height: 150%; */
+    height: 36px;
+    color: rgba(0, 0, 0, 0.87);
+
+}
+
+.card-info{
+    display: flex;
+    justify-content: flex-start;
+    height: 32px;
+    
+}
+
+.iconify-inline.rating{
+    color: #FB8200;
+    height: 11px;
+    width: 12px;
+    left: 3px;
+    top: 3px;
+    border-radius: 0px;
+
+
+}
+
+.rating-number{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #5E6366;
+}
+
+.details{
+    
+    height: 61px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.018em;
+    color: #787885;
+    width: 196px;
+}
+.see-more
+{
+ 
+    width: 1000px;
+  
+}
+.see-more a
+{
+    text-decoration: none;
+    color: #E02C6DDE;
+    float: right;
+    margin: 50px 0px 100px 0px;
+    font-weight: bold;
+    font-size: 16px;
+    gap: 10px;
+    transition: transform .35s linear;
+}
+.see-more .iconify-inline
+{
+    margin-left: 8px;
+    color: #E02C6DDE; 
+    
+}
+.see-more a:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+   transform: scale(1.1);
 }
