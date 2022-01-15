@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
 
 /* Intial margin and padding */
 *{
@@ -332,4 +333,48 @@ hr
     text-decoration: underline;
     text-underline-offset: 3px;
    transform: scale(1.1);
+}
+
+/* Footer CSS */
+footer{
+    background-color:  #0A0826;
+    color: white;    
+}
+.section-footer
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-footer h1{
+   
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 3px;
+}
+.section-footer p
+{
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 3px;
+}
+.social-icons
+{
+    display: grid;
+    grid-template-columns:repeat(4 ,1fr);
+    gap: 16px;
+   margin-top: 14px;
+   margin-bottom: 50px;
+}
+.footer-icon{
+    font-size: 26px;
+    background: rgba(255, 255, 255, 0.137);
+    padding: 10px;
+    border-radius: 50%;
+    
 }
