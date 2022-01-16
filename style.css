@@ -528,7 +528,7 @@ footer{
         text-align: center;
         
     }
-    /* .navigation{
+    .navigation{
         position: absolute;
         top: 80px;
         left: 0;
@@ -539,7 +539,7 @@ footer{
         padding: 20px 0;
         transform: translateY(-320px);
         transition: .5s ease-in-out;
-    } */
+    }
     .navigation li a{
         color: #121212;
     }
