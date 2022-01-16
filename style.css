@@ -160,10 +160,7 @@ nav{
     background-image: url(./images/Circle\ design.svg);
     background-repeat: no-repeat;
     overflow: hidden;
-    background-size: contain;
-   
-   
-    
+    background-size: contain;    
     
 }
 .banner-right img{
@@ -603,10 +600,15 @@ footer{
   {
       justify-content: center;
   }
+  .container
+  {
+      padding: 0 35px;
+  }
     .cards
     {
         display: grid;
         grid-template-columns: 1fr;
+        
     }
     
     .featured-products button
@@ -641,9 +643,19 @@ footer{
 
     .collection
     {
-        margin: 0 35px;
+        margin: 0 60px;
        
     }
+    .card
+    {
+        width: 100%;
+j       justify-content: center;
+    }
+
+    /* .card-banner img
+    {
+        width: fit-content;
+    } */
 
     .section-title{
        
