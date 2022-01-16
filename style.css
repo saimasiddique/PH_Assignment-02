@@ -649,7 +649,7 @@ footer{
     .card
     {
         width: 100%;
-j       justify-content: center;
+   
     }
 
     /* .card-banner img
@@ -725,14 +725,14 @@ j       justify-content: center;
         flex-wrap: wrap;
         }
 
-       
+    }  
 
-@media (max-width:238px){
+@media (max-width:238px)
+{
 
  .social-icons
         {
             grid-template-columns: 1fr 1fr;
             row-gap: 10px;
         } 
-
-}
+    }
