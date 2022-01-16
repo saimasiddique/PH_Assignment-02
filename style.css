@@ -533,7 +533,7 @@ footer{
         
     }
     .navigation{
-        position: absolute;
+        /* position: absolute;
         top: 80px;
         left: 0;
         width: 100%;
@@ -542,7 +542,8 @@ footer{
         background-color: #fff;
         padding: 20px 0;
         transform: translateY(-320px);
-        transition: .5s ease-in-out;
+        transition: .5s ease-in-out; */
+        display: none;
     }
     .navigation li a{
         color: #121212;
