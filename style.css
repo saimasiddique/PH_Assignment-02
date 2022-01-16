@@ -10,6 +10,9 @@
     padding: 0;
     /* box-sizing: border-box; */
 }
+html,body{
+    overflow-x: hidden;
+}
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -159,7 +162,7 @@ nav{
 
     background-image: url(./images/Circle\ design.svg);
     background-repeat: no-repeat;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-size: contain;    
     
 }
@@ -167,18 +170,22 @@ nav{
     
     object-fit: cover;
     height: 414px;
-    width: 430px;
+    width: 420px;
+    /* width: 100%; */
     left: 835px;
     top: 211px;
-    border-radius: 0px; 
+    /* border-radius: 0px;  */
+    
+    
 }
 
 .banner-right img:hover
 {
     transform: scale(1.2);
     transition: transform 2s ease-in-out ;
-    
+        
 }
+
 
 /* Brands */
 .brands{
